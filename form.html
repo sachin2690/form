@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Cart Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f4f4f9, #e2e8f0);
+      margin: 0;
+      padding: 2rem;
+    }
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .welcome {
+      text-align: left;
+      font-size: 4rem;
+      font-weight: bold;
+      color: rgb(255, 0, 47);
+      margin-bottom: 0.5rem;
+    }
+    .slogan {
+      font-size: 1.5rem;
+      color: #000000ee;
+      font-style: italic;
+      text-shadow: 1px 1px 2px #555;    
+      margin-bottom: 2rem;
+    }
+    .cart-image {
+      width: 200px;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+    .form-container {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .logo {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #007BFF;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    input:focus, select:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+    button {
+      background: #007BFF;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="info-container">
+    <div class="welcome">Welcome to Cartify</div>
+    <div class="slogan">Experience Shopping, Like Never Before</div>
+    
+  </div>
+  <div class="form-container">
+    <div class="logo">CARTIFY</div>
+    <h2>Register Your Smart Cart</h2>
+    <form action="https://script.google.com/macros/s/AKfycbzA_mA3xjWHpM4RNHqqZiStnP9yCJ53D2g45tcD8m1U0vNoEmoBy1iSevRAGj_RxmQl/exec" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="contact">Contact Number</label>
+      <input type="tel" id="contact" name="contact" placeholder="Your Contact Number" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+
+      <label for="cart">Select Cart</label>
+      <select id="cart" name="cart" required>
+        <option value="">-- Select Cart --</option>
+        <option value="CART001">CART001</option>
+        <option value="CART002">CART002</option>
+        <option value="CART003">CART003</option>
+        <option value="CART004">CART004</option>
+        <option value="CART005">CART005</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
