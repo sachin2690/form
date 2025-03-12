@@ -48,6 +48,7 @@
       width: 100%;
       max-width: 400px;
       animation: fadeIn 1s ease-in-out;
+      text-align: center;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-10px); }
@@ -69,6 +70,7 @@
       display: block;
       margin-bottom: 0.5rem;
       color: #555;
+      text-align: left;
     }
     input, select, button {
       width: 100%;
@@ -93,14 +95,29 @@
     button:hover {
       background: #0056b3;
     }
+    /* Back to Home Button */
+    .back-button {
+      display: inline-block;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-top: 1rem;
+      transition: background 0.3s ease-in-out;
+    }
+    .back-button:hover {
+      background: #218838;
+    }
   </style>
 </head>
 <body>
   <div class="info-container">
     <div class="welcome">Welcome to Cartify</div>
     <div class="slogan">Experience Shopping, Like Never Before</div>
-    
   </div>
+
   <div class="form-container">
     <div class="logo">CARTIFY</div>
     <h2>Register Your Smart Cart</h2>
@@ -123,6 +140,9 @@
 
       <button type="submit">Register</button>
     </form>
+
+    <!-- Back to Home Button -->
+    <a href="home.html" class="back-button">Back to Home</a>
   </div>
 </body>
 </html>
